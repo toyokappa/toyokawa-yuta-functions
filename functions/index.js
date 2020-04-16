@@ -17,7 +17,7 @@ const mailTemplate = (data) => {
 
 exports.sendMail = functions.https.onCall(async (data, _context) => {
   const mail = {
-    from: 'postmaster@sandbox775e113f7c924197aaeeb4b848707749.mailgun.org',
+    from: 'no-reply@toyokawa-yuta.com',
     to: mailTo,
     subject: '【TOYOKAWA】お問い合わせがありました',
     text: mailTemplate(data)
